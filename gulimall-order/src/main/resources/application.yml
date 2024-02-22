@@ -4,6 +4,12 @@ spring:
     password: root001
     url: jdbc:mysql://123.60.144.22:3306/gulimall_oms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 123.60.144.22:8848
+  application:
+    name: gulimall-order
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
   global-config:
